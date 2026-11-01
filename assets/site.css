@@ -31,4 +31,4 @@ html{scroll-behavior:smooth}
 @media (max-width:640px){h1,h2{overflow-wrap:anywhere}}
 #booking-form button[type="submit"]{color:#F5EBE1!important;background:#8c242c!important}
 #booking-form button[type="submit"]:hover{background:#a32b34!important}
-html,body{overflow-x:hidden}
+html,body{overflow-x:clip}
