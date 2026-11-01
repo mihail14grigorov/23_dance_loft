@@ -1,0 +1,979 @@
+<!DOCTYPE html><html class="dark" lang="ru"><head><title>23 Family Dance Studio</title><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type">
+
+
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style id="burgundy-restyle-theme">
+  /* Filter Bar Container & Chips */
+  section > div.bg-surface-container-low.p-space-md,
+  .loc-tab.bg-surface-container-lowest,
+  section div.flex.items-center.bg-surface-container-lowest.p-1 {
+    background: linear-gradient(145deg, #3d1215 0%, #58181d 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+  }
+  .filter-btn.bg-surface-container-highest {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.35) !important;
+    color: #F5EBE1 !important;
+  }
+  .filter-btn.bg-surface-container-highest:hover {
+    background: linear-gradient(145deg, #5c1a20 0%, #7d242a 100%) !important;
+    color: #ffffff !important;
+  }
+
+  /* Masonry Gallery Hanging Cards */
+  .gallery-item > div.relative.bg-surface-container-low {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+    box-shadow: 6px 8px 0px #1a0608 !important;
+  }
+
+  /* Cards Lower Info Plaque */
+  .gallery-item div.mt-3.bg-surface-container-high {
+    background: rgba(45, 12, 15, 0.85) !important;
+    border: 1px solid rgba(230, 215, 206, 0.25) !important;
+  }
+  .gallery-item div.mt-3.bg-surface-container-high h3 {
+    color: #F5EBE1 !important;
+  }
+  .gallery-item div.mt-3.bg-surface-container-high .text-outline,
+  .gallery-item div.mt-3.bg-surface-container-high .text-on-surface-variant {
+    color: #E6D7CE !important;
+  }
+  .gallery-item div.mt-3.bg-surface-container-high div.bg-surface-container {
+    background: rgba(30, 8, 10, 0.7) !important;
+    border: 1px solid rgba(230, 215, 206, 0.2) !important;
+  }
+
+  /* Dark Badge Accents inside cards */
+  .gallery-item div.absolute.bg-surface-container-lowest,
+  .gallery-item div.absolute.bg-surface-container-lowest\/80,
+  .gallery-item div.absolute.bg-surface-container-lowest\/90 {
+    background: rgba(45, 12, 15, 0.95) !important;
+    border: 1px solid rgba(230, 215, 206, 0.35) !important;
+    color: #F5EBE1 !important;
+  }
+
+  /* Counters Metal Strip in Hero */
+  section div.flex.items-center.gap-2.bg-surface-container-lowest {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+    color: #F5EBE1 !important;
+  }
+  section div.flex.items-center.gap-2.bg-surface-container-lowest span {
+    color: #F5EBE1 !important;
+  }
+
+  /* Trial / Quick Action Box next to Instagram */
+  .lg\:col-span-5.bg-surface-container-low {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+  }
+  .lg\:col-span-5.bg-surface-container-low h2 {
+    color: #F5EBE1 !important;
+  }
+  .lg\:col-span-5.bg-surface-container-low p {
+    color: #E6D7CE !important;
+  }
+  .lg\:col-span-5.bg-surface-container-low a.bg-surface-container-high {
+    background: rgba(35, 9, 12, 0.8) !important;
+    border: 1px solid rgba(230, 215, 206, 0.3) !important;
+    color: #F5EBE1 !important;
+  }
+
+  /* Studio Locations Strip */
+  section div.w-full.bg-surface-container-lowest.p-space-md {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+  }
+  section div.w-full.bg-surface-container-lowest.p-space-md span.text-outline {
+    color: #E6D7CE !important;
+  }
+  section div.w-full.bg-surface-container-lowest.p-space-md span.font-label-md {
+    color: #F5EBE1 !important;
+  }
+
+  /* Footer Blocks */
+  footer .bg-surface-container-low.p-space-sm {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+  }
+  footer .bg-surface-container-low.p-space-sm span.text-primary {
+    color: #ffb3b2 !important;
+  }
+  footer .bg-surface-container-low.p-space-sm span.text-on-surface,
+  footer .bg-surface-container-low.p-space-sm span.font-bold {
+    color: #F5EBE1 !important;
+  }
+  footer .bg-surface-container-low.p-space-sm span.text-on-surface-variant,
+  footer .bg-surface-container-low.p-space-sm span.text-outline {
+    color: #E6D7CE !important;
+  }
+  footer .bg-surface-container-low.p-space-sm a.bg-surface-container-highest {
+    background: rgba(35, 9, 12, 0.8) !important;
+    border: 1px solid rgba(230, 215, 206, 0.3) !important;
+    color: #F5EBE1 !important;
+  }
+
+  /* Lightbox Modal Card */
+  #media-modal > div.bg-surface-container-low {
+    background: linear-gradient(145deg, #4A1519 0%, #6B1D23 100%) !important;
+    border: 1px solid rgba(230, 215, 206, 0.4) !important;
+  }
+  #media-modal #modal-title {
+    color: #F5EBE1 !important;
+  }
+  #media-modal #modal-loc, #media-modal #modal-coach, #media-modal #modal-date {
+    color: #E6D7CE !important;
+  }
+</style><link rel="stylesheet" href="assets/site.css"></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_4px_16px_rgba(0,0,0,0.7)]"><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm bg-secondary-fixed px-space-sm py-space-xs shadow-[3px_3px_0px_#000000] -rotate-1 hover:rotate-0 transition-transform" data-path="home" href="index.html"><img src="assets/logo.jpg" alt="23 Family Dance Studio" style="mix-blend-mode:multiply;height:54px;width:auto;display:block"></a></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container shadow-[2px_2px_0px_#000000]"><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="directions" href="index.html#directions-section">Направления</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="schedule" href="schedule-riga.html">Расписание</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="pricing" href="prices-riga.html">Цены</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="instructors" href="index.html#instructors-section">Преподаватели</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="studios" href="halls.html">Залы</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="gallery" href="gallery.html">Галерея</a><a class="px-space-sm py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="reviews" href="reviews.html">Отзывы</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-high p-space-xs shadow-[2px_2px_0px_#000000]"><button class="px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase" type="button">RU</button><span class="px-1 text-outline font-label-sm text-label-sm">/</span><button class="px-space-xs py-0.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-colors" type="button">LV</button></div><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary-container px-space-md py-space-sm font-label-lg text-label-lg uppercase tracking-wider shadow-[4px_4px_0px_#000000] hover:bg-on-primary hover:text-primary-fixed hover:-translate-x-0.5 hover:-translate-y-0.5 active:translate-x-0 active:translate-y-0 transition-all" data-path="trial-booking" href="booking.html">Записаться на пробное</a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Top Concrete Texture & Architectural Ambient Glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[42rem] pointer-events-none overflow-hidden opacity-30 select-none">
+<div class="absolute -top-32 left-1/4 w-[36rem] h-[36rem] rounded-full bg-primary-container/20 blur-[130px]"></div>
+<div class="absolute top-24 right-1/4 w-[28rem] h-[28rem] rounded-full bg-tertiary-container/15 blur-[100px]"></div>
+<!-- Sprayed Background 23 Watermark -->
+<span class="absolute top-8 left-1/2 -translate-x-1/2 font-headline-lg text-[22vw] leading-none font-black text-surface-container-high/40 select-none tracking-tighter opacity-25">23</span>
+</div>
+<!-- PAGE HERO / GRAFFITI LOFT HEADER -->
+<section class="relative w-full px-gutter lg:px-margin pt-space-lg pb-space-2xl flex flex-col items-center justify-center text-center overflow-hidden">
+<!-- Expansion Joint Anchor Bar -->
+<div class="w-full flex items-center justify-between mb-space-md opacity-75">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="">[ SEC: MEDIA_ARCHIVE // 23_STUDIO_VAULT ]</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-label-sm text-label-sm text-primary">
+<span class="tracking-widest">★ 23_CREW_MOMENTS</span>
+<span class="text-outline">///</span>
+<span class="text-secondary font-bold">RĪGA_SALASPILS</span>
+</div>
+</div>
+<!-- Giant Hand-Sprayed Graffiti Header with Paint Drips -->
+<div class="relative my-space-md flex flex-col items-center">
+<!-- Drip & Stencil Marks -->
+<div class="absolute -top-8 -left-8 md:-left-16 rotate-[-12deg] bg-surface-container-lowest text-primary px-3 py-1 font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] z-20 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">format_paint</span>
+<span class="">RAW TAPE #094</span>
+</div>
+<div class="relative inline-block -rotate-[2.5deg] group cursor-default">
+<!-- Overspray Shadow -->
+<h1 class="font-headline-lg text-[64px] sm:text-[96px] md:text-[124px] lg:text-[144px] leading-none tracking-tight font-extrabold text-on-surface uppercase select-none drop-shadow-[0_10px_25px_rgba(140,36,44,0.45)]">
+          ГАЛЕРЕЯ
+        </h1>
+<!-- Paint Drip Accents -->
+<div class="absolute -bottom-3 left-1/4 w-1.5 h-7 bg-primary rounded-b-full shadow-[0_2px_4px_#000000]"></div>
+<div class="absolute -bottom-5 left-[28%] w-1 h-9 bg-primary-container rounded-b-full"></div>
+<div class="absolute -bottom-2 right-1/3 w-2 h-6 bg-primary rounded-b-full"></div>
+<div class="absolute -bottom-4 right-[22%] w-1.5 h-8 bg-tertiary-container rounded-b-full"></div>
+<!-- Sprayed Arrow & Tag Overlay -->
+<div class="absolute -top-3 -right-6 md:-right-12 rotate-[15deg] text-primary flex flex-col items-center pointer-events-none">
+<span class="font-label-md text-label-md tracking-widest text-primary-fixed bg-surface-container-lowest px-2 py-0.5 shadow-[2px_2px_0px_#8c242c]">★ LIVE SHOTS</span>
+<span class="material-symbols-outlined text-3xl font-black mt-1">subdirectory_arrow_left</span>
+</div>
+</div>
+<!-- Subtitle & Manifest Badge -->
+<p class="mt-space-md max-w-2xl font-body-lg text-body-lg text-secondary">
+        Живая атмосфера лофта, съемки хореографий, победы на чемпионатах и первые шаги самых маленьких танцоров в Риге и Саласпилсе.
+      </p>
+<div class="mt-space-sm flex flex-wrap items-center justify-center gap-space-sm font-label-md text-label-md">
+<span class="bg-surface-container-low text-primary px-3 py-1 shadow-[2px_2px_0px_#000000]">
+          /// NO FILTERS // RAW PASSION
+        </span>
+<span class="bg-surface-container-high text-on-surface px-3 py-1 shadow-[2px_2px_0px_#000000]">
+          СТУДИЯ JĀŅA DALIŅA 8 &amp; SKOLAS 10
+        </span>
+</div>
+<!-- Counters Metal Strip -->
+<div class="mt-space-lg flex flex-wrap items-center justify-center gap-space-xs md:gap-space-md">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 shadow-[3px_3px_0px_#000000]">
+<span class="material-symbols-outlined text-primary text-lg">photo_camera</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">120+ ФОТО</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 shadow-[3px_3px_0px_#000000]">
+<span class="material-symbols-outlined text-primary text-lg">videocam</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">35 ВИДЕО</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 shadow-[3px_3px_0px_#000000]">
+<span class="material-symbols-outlined text-secondary text-lg">calendar_month</span>
+<span class="font-label-md text-label-md font-bold text-secondary">СЕЗОН 2026–2027</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTROLS & MACHINE FILTER BAR -->
+<section class="w-full px-gutter lg:px-margin mb-space-xl z-20">
+<div class="bg-surface-container-low p-space-md shadow-[4px_4px_0px_#000000] flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-xs" id="filter-buttons">
+<button class="filter-btn bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase px-4 py-2.5 shadow-[3px_3px_0px_#8c242c] flex items-center gap-1.5 transition-all" data-filter="all">
+<span class="text-primary-container font-black">★</span>
+<span class="">ВСЕ МАТЕРИАЛЫ</span>
+</button>
+<button class="filter-btn bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase px-4 py-2.5 shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 transition-all" data-filter="photo">
+<span class="material-symbols-outlined text-sm">image</span>
+<span class="">ФОТО</span>
+</button>
+<button class="filter-btn bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase px-4 py-2.5 shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 transition-all" data-filter="video">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+<span class="">ВИДЕО</span>
+</button>
+<button class="filter-btn bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase px-4 py-2.5 shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 transition-all" data-filter="battle">
+<span class="">ВЫСТУПЛЕНИЯ</span>
+</button>
+<button class="filter-btn bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase px-4 py-2.5 shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 transition-all" data-filter="class">
+<span class="">ЗАНЯТИЯ</span>
+</button>
+<button class="filter-btn bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase px-4 py-2.5 shadow-[2px_2px_0px_#000000] flex items-center gap-1.5 transition-all" data-filter="kids">
+<span class="">ДЕТИ</span>
+</button>
+</div>
+<!-- Manifest Meta and Location Switcher -->
+<div class="flex flex-wrap items-center justify-between lg:justify-end gap-space-sm pt-space-xs lg:pt-0">
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span id="counter-tag" class="">[ ОТОБРАЖЕНО: 10 ИЗ 10 МАТЕРИАЛОВ ]</span>
+</div>
+<!-- Location Segmented Toggle -->
+<div class="flex items-center bg-surface-container-lowest p-1 shadow-[2px_2px_0px_#000000]">
+<button class="loc-tab active-loc font-label-sm text-label-sm px-3 py-1 bg-surface-container-high text-on-surface font-bold uppercase transition-all" id="loc-all">
+            ВСЕ ЗАЛЫ
+          </button>
+<button class="loc-tab font-label-sm text-label-sm px-3 py-1 text-on-surface-variant hover:text-on-surface uppercase transition-all" id="loc-riga">
+            RĪGA LOFT
+          </button>
+<button class="loc-tab font-label-sm text-label-sm px-3 py-1 text-on-surface-variant hover:text-on-surface uppercase transition-all" id="loc-salaspils">
+            SALASPILS HUB
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- MASONRY GALLERY GRID: TILES HANGING FROM STEEL CHAINS -->
+<section class="w-full px-gutter lg:px-margin mb-space-3xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 items-start" id="gallery-grid">
+<!-- ITEM 1: Video High Heels Choreo Pro (Riga) -->
+<div class="gallery-item flex flex-col group" data-category="video class" data-index="0" data-location="riga">
+<!-- Hanging Steel Chains & Carabiners -->
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-9 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-9 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<!-- Hanging Card Body -->
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[-1.5deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<!-- Corner Tape Sticker -->
+<div class="absolute -top-3 -right-2 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-3 py-0.5 rotate-[8deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            RĪGA HQ // PRO
+          </div>
+<!-- Media Display -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Liana" data-date="14.10.2024" data-duration="02:14" data-loc="Лофт Rīga // Jāņa Daliņa iela 8" data-title="HIGH HEELS CHOREO PRO // RĪGA HQ" data-type="video">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Dancers in a raw urban dance loft performing dynamic high heels choreography with dramatic warm red and burgundy industrial studio spotlighting on concrete floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADUXcYhqKgYwltovEZnmsRWim23Ta0iZXUNWkTLIPVJDNwRIB9YN9UAANGTtyOAe3qJiGM8Vwrdep1cAKJPLD7GgRFsTwA2yvHtorrc4IYl_b6b70Qqs97l-8Zh6t76vYMHfTkRZXBp3Qb4RXSkEBesyjdBI32JLoRkeP3TjfpY1m-J7Iap_4aEQreLBrXxXEVaxdqdPiL56EPQDA-QJrG1GmoOulEZiTe8fQMxRy3">
+<!-- Video Overlay Rubber Stamp Play Button -->
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/90 text-on-primary-container flex flex-col items-center justify-center p-2 text-center shadow-[4px_4px_0px_#000000] group-hover:scale-110 group-hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined text-3xl font-black">play_arrow</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">4K REEL</span>
+</div>
+</div>
+<!-- Duration Badge -->
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">02:14</span>
+</div>
+</div>
+<!-- Bottom Riveted Metal Plaque -->
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">ROLL_ID #01</span>
+<span class="">LIANA CHOREO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              HIGH HEELS CHOREO PRO
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">RĪGA // HALL CYCLO</span>
+<span class="text-primary font-bold">14.10.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 2: Photo Kids Mini Squad (Salaspils) -->
+<div class="gallery-item flex flex-col group" data-category="photo kids class" data-index="1" data-location="salaspils">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-14 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-14 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[1.5deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-2 -left-2 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-0.5 -rotate-[6deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            SALASPILS // 4-7 ЛЕТ
+          </div>
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Anastasiia" data-date="28.10.2024" data-loc="Salaspils Hub // Skolas iela 10" data-title="KIDS MINI SQUAD // ПЕРВЫЕ ШАГИ" data-type="photo">
+<img class="w-full h-full object-cover filter grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500" data-alt="Children dance crew in black street dance oversized hoodies posing playfully on raw loft wooden dance floor with warm cinematic backlights in Salaspils studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_yJD_oTruZO8JdlYBwrHQjmNGKVqbjU9sH0DF40C6WDGL7OqMveXym-LHIRLxhEzsuNu64rHKOnWm6p8jI5zsoVmGmnItMlIrzXttNbed1XRFoAH1hmOhAn7PHEveOSKeo9VlWWwn7yY7yRWPPdLZ_zymx9BAAqQhp3JB079wt_QloHVqqojoSUv2JEy0BA6tlcbH_z2try26TnsQIBvm5r2Np2tbIN09zqhrcQLr">
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-2 py-0.5 font-label-sm text-label-sm text-secondary">
+              SHOT #KID-44
+            </div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">PHOTO ARCHIVE</span>
+<span class="">ANASTASIIA COACH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              KIDS MINI SQUAD // ПЕРВЫЕ ШАГИ
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">SALASPILS HUB</span>
+<span class="text-primary font-bold">28.10.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 3: Video Hip Hop Battle (Riga) -->
+<div class="gallery-item flex flex-col group" data-category="video battle" data-index="2" data-location="riga">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-7 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-7 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[-2deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 right-4 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-3 py-0.5 rotate-[-4deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            STREET CYPHERS '24
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="23 Crew" data-date="05.11.2024" data-duration="01:48" data-loc="Лофт Rīga // Jāņa Daliņa iela 8" data-title="HIP HOP CREW BATTLE // STREET CYPHERS" data-type="video">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Intense hip hop street dance battle cypher surrounded by cheering urban dancers in an authentic raw industrial warehouse with concrete walls and hanging Edison bulbs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi0-TL-wU8DOMA3GlPTdmh8ZPVN-ww0YIZLpp7vYtxwhlaSmpuIydxIvE_TY-s44o-2f8M8-8RxYiLeGTNW2NYwuHX2kfhXs9IzOxJwGSv0tESyhGw8yDakAGoYPlEykTrqx7CIn8gGTsROpGP2MYPGF75lU5qBXXiYk9Dl4kQWGTa_9SOKxk9UH6GPDZzx43B1Et-0xYEeIu4CiMuKKyMAVnsvm5KF2RBKAUuSqu1">
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/90 text-on-primary-container flex flex-col items-center justify-center p-2 text-center shadow-[4px_4px_0px_#000000] group-hover:scale-110 group-hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined text-3xl font-black">play_arrow</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">4K BATTLE</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">01:48</span>
+</div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">BATTLE REEL</span>
+<span class="">MAIN HALL RĪGA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              HIP HOP CREW CYPHERS
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">BATTLE CIRCLE // 7 TO SMOKE</span>
+<span class="text-primary font-bold">05.11.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 4: Photo Atmosphere Loft (Riga) -->
+<div class="gallery-item flex flex-col group" data-category="photo class" data-index="3" data-location="riga">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-10 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-10 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[1deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 left-1/4 bg-surface-container-lowest text-secondary font-label-sm text-label-sm px-3 py-0.5 -rotate-[2deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            HALL // JĀŅA DALIŅA 8
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Interior" data-date="02.09.2024" data-loc="Лофт Rīga // Jāņa Daliņa iela 8" data-title="ATMOSPHERE // LOFT JĀŅA DALIŅA 8" data-type="photo">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Dark moody monochrome architectural photo of spacious high-ceiling dance hall with exposed ventilation pipes, mirrored wall, neon light strip, and smooth oak floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAnvgGrIiOhvAgLWic8veEk8XH1k_kCSGrpUK-hSJHb0EqiyfbVpXB7Tfl8r7uc-2Kf2tb5wLL-vcf2dYB3_IBrsdxk4CEpMZGJSDg_eTaP0VK0Kr_ypyWeUaFxS-Y3R_KjwwDlXl5jJC7tGlEomWofRbosD4tfOP-QG7bnISjj1wnl7MMpzWq-qQzXxoQc3JV1wK4TRldHc_u6Z7KsSJxvPXcdRMA1-iNMlr7RsWR">
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-2 py-0.5 font-label-sm text-label-sm text-secondary">
+              CYCLO ROOM 180M²
+            </div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">SPACES // RIG</span>
+<span class="">SOUND 4KW</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              ATMOSPHERE // LOFT RĪGA
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">BEAT ROOM &amp; CHILL</span>
+<span class="text-primary font-bold">02.09.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 5: Video Dancehall Masterclass (Salaspils) -->
+<div class="gallery-item flex flex-col group" data-category="video class" data-index="4" data-location="salaspils">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-12 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-12 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[-1deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 -right-2 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-3 py-0.5 rotate-[4deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            SALASPILS // WORKSHOP
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Liana" data-date="18.11.2024" data-duration="03:05" data-loc="Salaspils Hub // Skolas iela 10" data-title="DANCEHALL QUEEN VIBES // MASTERCLASS" data-type="video">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Intense high energy dancehall class in a packed dance studio with female dancers moving in sync with dramatic crimson backlighting and sweat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnTj3U3lP_flXxIUmjH-flKZkZOUl86kyvQ6yyAfuEzZ0lMv5jmvihxPXd7CAVm_Ah2zfrTKS3qcqiwwoA7en1thzsJnHLlF-BYU5kPOttKTRVhnYoXFAL4Mv_bINDd-XMMF9Q6180zhRkHLThgs0V3Ddthprwt-TAtWbzJvHSWnjm64Lb5t0Ve74LDEIaDez9lYXk-IbvEHtLauqe5qs-HSN6VW4f2DDBxYle6xLP">
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/90 text-on-primary-container flex flex-col items-center justify-center p-2 text-center shadow-[4px_4px_0px_#000000] group-hover:scale-110 group-hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined text-3xl font-black">play_arrow</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">4K VIDEO</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">03:05</span>
+</div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">FEMALE SESSIONS</span>
+<span class="">LIANA GUEST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              DANCEHALL MASTERCLASS
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">SALASPILS WORKSHOP</span>
+<span class="text-primary font-bold">18.11.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 6: Photo Baby Dance Rhythmic 4-6 (Salaspils) -->
+<div class="gallery-item flex flex-col group" data-category="photo kids" data-index="5" data-location="salaspils">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-8 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-8 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[2deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 -left-3 bg-tertiary-container text-on-tertiary font-label-sm text-label-sm px-3 py-0.5 -rotate-[4deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            BABY DANCE // 4-6 ЛЕТ
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Anastasiia" data-date="04.11.2024" data-loc="Salaspils Hub // Skolas iela 10" data-title="BABY DANCE RHYTHMIC // 4-6 ЛЕТ" data-type="photo">
+<img class="w-full h-full object-cover filter contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500" data-alt="Adorable group of 5-year-old toddlers in hip hop tracksuits practicing balance and stretching with smiles in front of studio mirrors with an instructor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8szLpFU-B_v-Tkw8q6R01h6VAQlnFAnWT1A37TP1XdHbf2RqBCtUHUt_HGMg6DVRkphcDPo9l_Hlbrokge8lOGtu_TP_2BhmFzLdKlDyf0e8-J0I56c8bgB9U4E9jzsW4_eNTsPWqDauCHJUcXGsUpaMpiyARVOvKdp1wS6JhEZQQGd18kkz6cksye5iuY2FMqMOF7aBytMnMmvFeymIvLlH9F3k9EeHnVrPNAzEw">
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-2 py-0.5 font-label-sm text-label-sm text-secondary">
+              RHYTHM &amp; FUN
+            </div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">JUNIOR STAGE</span>
+<span class="">ANASTASIIA COACH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              BABY DANCE RHYTHMIC
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">SALASPILS TODDLERS</span>
+<span class="text-primary font-bold">04.11.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 7: Video Teenagers Crew Baltic Championship (Riga) -->
+<div class="gallery-item flex flex-col group" data-category="video battle" data-index="6" data-location="riga">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-10 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-10 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[-1.5deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 -right-2 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-0.5 rotate-[6deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            ★ 1ST PLACE // TROPHY
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="23 Family Team" data-date="20.10.2024" data-duration="04:12" data-loc="Rīga // Baltic Open Dance Cup" data-title="TEENAGERS CREW // BALTIC CHAMPIONSHIP" data-type="video">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Teenage urban dance squad performing on big championship stage with haze, strobe stage lights, synchronized fierce choreo, and 1st place gold trophy celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAHppNoLQgTOhvq2B-A3a7GbeEsLEHwbKlteCtwtetUBVkPFIu1ACfnrS4iIX5M4Ul_26Lxd6Gp5Zh0m76mmNJvApRmfAEd3uWheg_FEVJBSuU9B7472OzBfWI0RVF0bdsQsHChcpGV9M-dzmfk8Cdwo9JjHeHLmXYBLaFk1xbevGOkEXAqfo4CLkgq8rD_L5j5j-DN44Gi4dV_gRqlAi_rNxyUHf1t6hLJb7E4CSD">
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/90 text-on-primary-container flex flex-col items-center justify-center p-2 text-center shadow-[4px_4px_0px_#000000] group-hover:scale-110 group-hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined text-3xl font-black">play_arrow</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">SHOW REEL</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">04:12</span>
+</div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">CHAMPIONSHIP</span>
+<span class="">GOLD MEDALISTS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              TEENAGERS CREW // BALTIC CUP
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">CHOREOGRAPHY DIVISION</span>
+<span class="text-primary font-bold">20.10.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 8: Photo Salaspils Chill Zone & Reception -->
+<div class="gallery-item flex flex-col group" data-category="photo" data-index="7" data-location="salaspils">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-14 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-14 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[1.8deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 left-4 bg-surface-container-lowest text-secondary font-label-sm text-label-sm px-3 py-0.5 -rotate-[3deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            HUB SALASPILS // LOUNGE
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Studio Lounge" data-date="15.09.2024" data-loc="Salaspils Hub // Skolas iela 10" data-title="SALASPILS CHILL ZONE &amp; RECEPTION" data-type="photo">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Cozy industrial dance studio reception and parents waiting lounge with concrete walls, leather armchairs, coffee bar, and warm glowing neon studio logo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBec25nWbLr7Zc1tJWjni69AImvFj3IttpBkNTwnoqb4n9zj2Df4W5ZV8-VBVp3MaVc0Yazjq_r873J5kWc9TdC1XHmnCSt45I2nYThdBOMS_QuaZ1VH-g5rCV_8Uh0X3HexJO4BytlMzyxfrVfjk-M4BQNTnYU5Zu_6W84tciB7qIF7hYSK50H47gquA0MJf9N6fwQfV_rxcREK9wQ77VgpA7NHKZssD3tJ94gBJOA">
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-2 py-0.5 font-label-sm text-label-sm text-secondary">
+              PARENTS &amp; CREW AREA
+            </div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">FACILITY // COFFEE</span>
+<span class="">SKOLAS 10</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              SALASPILS CHILL ZONE
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">RECEPTION &amp; LOCKER ROOMS</span>
+<span class="text-primary font-bold">15.09.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 9: Photo Intensive High Heels Backstage (Riga) -->
+<div class="gallery-item flex flex-col group" data-category="photo class" data-index="8" data-location="riga">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-9 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-9 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[-1deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 -right-2 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-3 py-0.5 rotate-[5deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            BACKSTAGE // PORTRAIT
+          </div>
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Liana" data-date="09.11.2024" data-loc="Лофт Rīga // Jāņa Daliņa iela 8" data-title="INTENSIVE HIGH HEELS // BACKSTAGE PORTRAIT" data-type="photo">
+<img class="w-full h-full object-cover filter contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500" data-alt="Editorial dance backstage portrait of a female dancer lacing stiletto dance boots in a dimly lit warehouse loft dressing room with soft red neon light reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz06srxZIBRzwxyzOqLIOgjtgWoCGvrsBhPN0i40mVVxhht3VzQ6rBae11bV0J0SYqchx9R9Pr6HhOfIWohIWmWU6bpw54fqw0bxlh5SSjIGNSlKpS7nzAlHs7MnFBgIwIhy1Teqhj_kNWKQZeN-8KrDQroQFoa-1H0L7VtMfEovT6HZY9Z2tFt8l0yvjWsiHubOI7i1sQ8LCvOBkKySGdUuK24ZnHV4ZhIf6amid5">
+<div class="absolute bottom-2 right-2 bg-surface-container-lowest/80 px-2 py-0.5 font-label-sm text-label-sm text-secondary">
+              PRO LAB // 35MM GRAIN
+            </div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">INTENSIVE LAB</span>
+<span class="">LIANA DIRECTION</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              HIGH HEELS BACKSTAGE
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">RĪGA // CYCLO STUDIO</span>
+<span class="text-primary font-bold">09.11.2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ITEM 10: Video Baby & Junior Open Cup 2024 (Salaspils) -->
+<div class="gallery-item flex flex-col group" data-category="video kids battle" data-index="9" data-location="salaspils">
+<div class="w-full flex justify-between px-10 -mb-2 pointer-events-none z-10">
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-11 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+<div class="flex flex-col items-center">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_2px_#000000]"></span>
+<span class="w-1.5 h-11 bg-neutral-600 shadow-[inset_0_0_2px_#000000]"></span>
+<span class="w-3 h-4 bg-outline-variant rounded-sm -mt-0.5"></span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-3 shadow-[6px_8px_0px_#000000] rotate-[1.2deg] group-hover:rotate-0 group-hover:translate-y-[-4px] group-hover:shadow-[8px_12px_0px_#8c242c] transition-all duration-300">
+<div class="absolute -top-3 left-4 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-3 py-0.5 -rotate-[3deg] shadow-[2px_2px_0px_#000000] z-20 font-bold uppercase">
+            JUNIOR CUP 2024
+          </div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden cursor-pointer open-modal" data-coach="Anastasiia" data-date="22.11.2024" data-duration="02:50" data-loc="Salaspils Hub // Skolas iela 10" data-title="BABY &amp; JUNIOR OPEN CUP 2024" data-type="video">
+<img class="w-full h-full object-cover filter contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-500" data-alt="Young kid dancers cheering on stage receiving medals and certificates with parents applauding in energetic urban dance championship festival." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHriDYTYmGYLitI-n-vHJID6DJb3pIlGgQZx6izZgSWMP3m85zdmzz1zbXLYbAPIJGPmqfZBZaP0hoox7hJ5ows6BYrwAXCxONBp-7VV-427YcRipk2rH6VHnsDwO-fbSyvoKJQE2Hx6s6mJAXBWp5EE3xu4Yxiocie2TMWp7usWG_jyF160Xsk53Qgl8lGZ-KGwMrSsIS_Lw3gfhUyFM9ysm8HzL1MzVGrvQRbGMb">
+<div class="absolute inset-0 bg-surface/30 flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-primary-container/90 text-on-primary-container flex flex-col items-center justify-center p-2 text-center shadow-[4px_4px_0px_#000000] group-hover:scale-110 group-hover:bg-tertiary-container transition-all">
+<span class="material-symbols-outlined text-3xl font-black">play_arrow</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter leading-none mt-0.5">CUP REEL</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="">02:50</span>
+</div>
+</div>
+<div class="mt-3 bg-surface-container-high p-3 flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="">SALASPILS COMP</span>
+<span class="">ANASTASIIA COACH</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              BABY &amp; JUNIOR OPEN CUP
+            </h3>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1 pt-1 bg-surface-container px-2 py-1">
+<span class="">STAGE CONCERT // MEDALS</span>
+<span class="text-primary font-bold">22.11.2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE LIGHTBOX MODAL OVERLAY (Hidden by default, triggered on click) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/95 backdrop-blur-md hidden transition-all" id="media-modal">
+<!-- Hanging Carabiners & Top Rig for Lightbox -->
+<div class="relative w-full max-w-4xl bg-surface-container-low shadow-[8px_8px_0px_#000000] border-t-4 border-primary-container p-4 md:p-6 flex flex-col">
+<!-- Top Modal Bar -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-3 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary-container shadow-[inset_0_1px_2px_#000000]"></span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight" id="modal-title">TITLE</span>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm mt-0.5">
+<span id="modal-loc" class="">Лофт Rīga</span>
+<span class="">//</span>
+<span id="modal-coach" class="">Куратор: Liana</span>
+<span class="">//</span>
+<span id="modal-date" class="">Дата: 14.10.2024</span>
+</div>
+</div>
+</div>
+<button class="font-label-md text-label-md uppercase bg-surface-container-highest hover:bg-primary-container text-on-surface hover:text-on-primary-container px-3 py-1.5 shadow-[2px_2px_0px_#000000] transition-colors flex items-center gap-1" id="close-modal">
+<span class="material-symbols-outlined text-sm">close</span>
+<span class="">ЗАКРЫТЬ [ESC]</span>
+</button>
+</div>
+<!-- Main Stage Preview Container -->
+<div class="relative w-full aspect-video bg-surface-container-lowest overflow-hidden flex items-center justify-center shadow-[inset_0_0_10px_#000000]">
+<img class="w-full h-full object-cover filter contrast-125" data-alt="Expanded dance studio photo showcase inside dark raw loft" id="modal-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDF8niIm1IC_rfxFZqbHMunhdKIjFV_4beUlBUi42Hd_LFhpn_jGsAlSxEU4yt6rO_SfqopV_gWARmX2oLsBnf2FHglLQw8gw4GpApVzJr5KASTbpXWqxodEBu24BAPqwLsRmxKsi7eQuT42lBnLHtQAFI5Gi_dm2N-OFpdT14DXwAhiRRT5FtBo6O14PYNUG6GMqUebYnS5re0DSo7fT0o72Y56iOKhIAx49_UFN">
+<!-- Video Play Simulation Banner in Modal -->
+<div class="absolute inset-0 bg-surface/40 flex flex-col items-center justify-center pointer-events-none" id="modal-video-badge">
+<div class="w-20 h-20 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[4px_4px_0px_#000000]">
+<span class="material-symbols-outlined text-4xl">play_arrow</span>
+</div>
+<span class="mt-2 bg-surface-container-lowest px-3 py-1 font-label-sm text-label-sm text-primary shadow-[2px_2px_0px_#000000]">
+            ▶ ВОСПРОИЗВЕДЕНИЕ В 4K // ПОЛНАЯ ЗАПИСЬ
+          </span>
+</div>
+<!-- Navigation Arrows -->
+<button class="absolute left-3 top-1/2 -translate-y-1/2 bg-surface-container-lowest/80 hover:bg-primary text-on-surface hover:text-on-primary p-3 shadow-[2px_2px_0px_#000000] transition-all" id="prev-item">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 bg-surface-container-lowest/80 hover:bg-primary text-on-surface hover:text-on-primary p-3 shadow-[2px_2px_0px_#000000] transition-all" id="next-item">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Modal Bottom Actions -->
+<div class="mt-4 pt-3 border-t border-surface-container-highest flex flex-wrap items-center justify-between gap-space-sm">
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="">23 FAMILY ARCHIVE // RAW MOTION QUALITY</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="font-label-md text-label-md uppercase bg-primary-container text-on-primary-container hover:bg-tertiary-container hover:text-on-tertiary px-5 py-2.5 shadow-[3px_3px_0px_#000000] transition-all" data-path="booking" href="booking.html">
+            ЗАПИСАТЬСЯ В ЭТУ ГРУППУ →
+          </a>
+</div>
+</div>
+</div>
+</div>
+<!-- INSTAGRAM DISPATCH & WAREHOUSE CTA SECTION -->
+<section class="w-full px-gutter lg:px-margin mb-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Instagram Dispatch Plaque (Bolted Burgundy Metal Sign) -->
+<div class="lg:col-span-7 bg-primary-container text-on-primary-container p-space-lg shadow-[6px_6px_0px_#000000] relative flex flex-col justify-between overflow-hidden">
+<!-- Structural Corner Rivets -->
+<div class="absolute top-2 left-2 w-2.5 h-2.5 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute bottom-2 left-2 w-2.5 h-2.5 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute bottom-2 right-2 w-2.5 h-2.5 rounded-full bg-surface-container-lowest shadow-[inset_0_1px_1px_#000000]"></div>
+<div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed mb-2">
+<span class="material-symbols-outlined text-lg">videocam</span>
+<span class="">DAILY REELS &amp; BACKSTAGE // LIVE STORIES</span>
+</div>
+<h2 class="font-headline-md text-headline-md uppercase font-black tracking-tight leading-none text-tertiary-fixed">
+            БОЛЬШЕ СЪЁМОК, ДЖЕМОВ И БЭКСТЕЙДЖА В НАШЕМ INSTAGRAM
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container/90 mt-space-sm max-w-lg">
+            Каждый день публикуем рабочие фрагменты тренировок, связки хореографов, разминки детских групп и объявления открытых баттлов.
+          </p>
+</div>
+<div class="mt-space-lg flex flex-wrap items-center gap-space-md">
+<a class="font-label-lg text-label-lg uppercase bg-surface-container-lowest text-primary hover:text-on-surface hover:bg-surface-container-high px-5 py-3 shadow-[4px_4px_0px_#000000] transition-all flex items-center gap-2" href="https://instagram.com/twenty.threee.family" target="_blank">
+<span class="">@twenty.threee.family</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">
+            [ 15.4K FOLLOWERS // ACTIVE CREW ]
+          </span>
+</div>
+</div>
+<!-- Quick Action / Free Trial Box -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg shadow-[6px_6px_0px_#000000] relative flex flex-col justify-between">
+<!-- Structural Corner Rivets -->
+<div class="absolute top-2 left-2 w-2.5 h-2.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute bottom-2 left-2 w-2.5 h-2.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_1px_#000000]"></div>
+<div class="absolute bottom-2 right-2 w-2.5 h-2.5 rounded-full bg-surface-container-highest shadow-[inset_0_1px_1px_#000000]"></div>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-2">
+            /// НАЧНИ ТАНЦЕВАТЬ СЕЙЧАС
+          </span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight">
+            ХОТИТЕ ТАК ЖЕ? ЗАПИШИТЕСЬ НА ПРОБНОЕ
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+            Подберем удобную группу по возрасту и уровню: от первых базовых шагов до профессиональной съемочной команды.
+          </p>
+</div>
+<div class="mt-space-md flex flex-col sm:flex-row gap-space-xs">
+<a class="font-label-md text-label-md uppercase bg-secondary-fixed text-on-secondary-fixed hover:bg-tertiary-container hover:text-on-tertiary px-4 py-3 text-center shadow-[3px_3px_0px_#000000] transition-all flex items-center justify-center gap-1" data-path="booking" href="booking.html">
+<span class="">ЗАПИСАТЬСЯ ОНЛАЙН</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="font-label-md text-label-md uppercase bg-surface-container-high text-on-surface hover:text-primary px-4 py-3 text-center shadow-[3px_3px_0px_#000000] transition-all flex items-center justify-center gap-1" href="tel:+37120000023">
+<span class="material-symbols-outlined text-sm">call</span>
+<span class="">+371 27192855</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- STUDIO LOCATIONS STRIP (Explicit Addresses as Requested) -->
+<section class="w-full px-gutter lg:px-margin mb-space-2xl">
+<div class="w-full bg-surface-container-lowest p-space-md shadow-[4px_4px_0px_#000000] flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<div>
+<span class="font-label-md text-label-md text-primary block uppercase">ЛОФТ RĪGA: JĀŅA DALIŅA IELA 8</span>
+<span class="font-body-sm text-body-sm text-outline">Главные репетиционные залы, съемки, раздевалки, лаунж</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<div>
+<span class="font-label-md text-label-md text-secondary block uppercase">ХАБ SALASPILS: SKOLAS IELA 10</span>
+<span class="font-body-sm text-body-sm text-outline">Детские секции, бейби-дэнс, мастер-классы, парковка</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase">LIANA: +371 27192855</span>
+<span class="text-outline">/</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">ANASTASIIA: +371 20529284</span>
+</div>
+</div>
+</section>
+<!-- CLIENT-SIDE INTERACTION SCRIPT -->
+<script>
+    (function() {
+      // 1. Highlight "ГАЛЕРЕЯ" in the navigation shell
+      const navLinks = document.querySelectorAll('header nav a[data-path="gallery"]');
+      navLinks.forEach(link => {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-[2px_2px_0px_#8c242c]');
+      });
+
+      // 2. Filter functionality
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('.gallery-item');
+      const locTabs = document.querySelectorAll('.loc-tab');
+      const counterTag = document.getElementById('counter-tag');
+
+      let currentCategory = 'all';
+      let currentLocation = 'all';
+
+      function updateGrid() {
+        let visibleCount = 0;
+        items.forEach(item => {
+          const itemCat = item.getAttribute('data-category') || '';
+          const itemLoc = item.getAttribute('data-location') || '';
+
+          const matchCat = (currentCategory === 'all') || itemCat.includes(currentCategory);
+          const matchLoc = (currentLocation === 'all') || (itemLoc === currentLocation);
+
+          if (matchCat && matchLoc) {
+            item.style.display = 'flex';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (counterTag) {
+          counterTag.textContent = `[ ОТОБРАЖЕНО: ${visibleCount} ИЗ ${items.length} МАТЕРИАЛОВ ]`;
+        }
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed', 'shadow-[3px_3px_0px_#8c242c]');
+            b.classList.add('bg-surface-container-highest', 'text-on-surface-variant', 'shadow-[2px_2px_0px_#000000]');
+          });
+          btn.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed', 'shadow-[3px_3px_0px_#8c242c]');
+          btn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+
+          currentCategory = btn.getAttribute('data-filter') || 'all';
+          updateGrid();
+        });
+      });
+
+      // Location Tabs
+      locTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          locTabs.forEach(t => {
+            t.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-bold');
+            t.classList.add('text-on-surface-variant');
+          });
+          tab.classList.add('bg-surface-container-high', 'text-on-surface', 'font-bold');
+          tab.classList.remove('text-on-surface-variant');
+
+          if (tab.id === 'loc-all') currentLocation = 'all';
+          if (tab.id === 'loc-riga') currentLocation = 'riga';
+          if (tab.id === 'loc-salaspils') currentLocation = 'salaspils';
+
+          updateGrid();
+        });
+      });
+
+      // 3. Modal / Lightbox behavior
+      const modal = document.getElementById('media-modal');
+      const closeModalBtn = document.getElementById('close-modal');
+      const openTriggers = document.querySelectorAll('.open-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalLoc = document.getElementById('modal-loc');
+      const modalCoach = document.getElementById('modal-coach');
+      const modalDate = document.getElementById('modal-date');
+      const modalVideoBadge = document.getElementById('modal-video-badge');
+      const prevBtn = document.getElementById('prev-item');
+      const nextBtn = document.getElementById('next-item');
+
+      let currentItemIndex = 0;
+      const modalDataList = [];
+
+      openTriggers.forEach((trigger, idx) => {
+        modalDataList.push({
+          title: trigger.getAttribute('data-title'),
+          loc: trigger.getAttribute('data-loc'),
+          coach: trigger.getAttribute('data-coach'),
+          date: trigger.getAttribute('data-date'),
+          type: trigger.getAttribute('data-type')
+        });
+
+        trigger.addEventListener('click', () => {
+          currentItemIndex = idx;
+          populateModal(currentItemIndex);
+          modal.classList.remove('hidden');
+        });
+      });
+
+      function populateModal(index) {
+        const data = modalDataList[index];
+        if (!data) return;
+        modalTitle.textContent = data.title;
+        modalLoc.textContent = data.loc;
+        modalCoach.textContent = 'Куратор: ' + data.coach;
+        modalDate.textContent = 'Дата: ' + data.date;
+
+        if (data.type === 'video') {
+          modalVideoBadge.classList.remove('hidden');
+        } else {
+          modalVideoBadge.classList.add('hidden');
+        }
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+        });
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          currentItemIndex = (currentItemIndex - 1 + modalDataList.length) % modalDataList.length;
+          populateModal(currentItemIndex);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          currentItemIndex = (currentItemIndex + 1) % modalDataList.length;
+          populateModal(currentItemIndex);
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-3xl"><div class="w-full h-3 bg-[repeating-linear-gradient(45deg,#8c242c,#8c242c_14px,#141313_14px,#141313_28px)]"></div><div class="w-full px-margin-mobile lg:px-margin py-space-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="flex flex-col gap-space-md"><div class="bg-secondary-fixed p-space-sm inline-block max-w-fit shadow-[3px_3px_0px_#000000] rotate-1"><span class="font-headline-md text-headline-md text-on-secondary-fixed uppercase leading-none block">23 FAMILY</span><span class="font-label-sm text-label-sm text-on-secondary-fixed-variant uppercase tracking-widest">Underground Loft Culture</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Танцевальное пространство в Риге и Саласпилсе. Хип-хоп, дэнсхолл, брейкинг, вог, хаус и авторская хореография. Настоящая студийная база с аутентичной эстетикой.</p><div class="flex items-center gap-space-sm"><a class="bg-surface-container-high text-on-surface p-space-sm shadow-[2px_2px_0px_#000000] hover:bg-primary-container hover:text-on-primary-container transition-colors" href="https://instagram.com/twenty.threee.family" target="_blank" rel="noopener" aria-label="Instagram"><span class="material-symbols-outlined text-lg">photo_camera</span></a><a class="bg-surface-container-high text-on-surface p-space-sm shadow-[2px_2px_0px_#000000] hover:bg-primary-container hover:text-on-primary-container transition-colors" href="https://t.me/+37127192855" target="_blank" rel="noopener" aria-label="Telegram"><span class="material-symbols-outlined text-lg">send</span></a></div></div><div class="flex flex-col gap-space-sm bg-surface-container-low p-space-lg shadow-[4px_4px_0px_#000000]"><div class="flex items-center justify-between pb-space-xs"><span class="font-headline-sm text-headline-sm text-primary uppercase">Рига</span><span class="font-label-sm text-label-sm text-on-surface-variant">RĪGA</span></div><p class="font-body-sm text-body-sm text-on-surface">Jāņa Daliņa iela 8<br>Rīga</p><div class="flex flex-col gap-space-xs mt-space-xs font-label-md text-label-md text-secondary-fixed-dim"><a class="hover:text-primary transition-colors" href="tel:+37127192855">Liana: +371 27192855</a><a class="hover:text-primary transition-colors" href="tel:+37120529284">Anastasiia: +371 20529284</a><span class="text-on-surface-variant font-label-sm text-label-sm">Группы — по расписанию</span></div></div><div class="flex flex-col gap-space-sm bg-surface-container-low p-space-lg shadow-[4px_4px_0px_#000000]"><div class="flex items-center justify-between pb-space-xs"><span class="font-headline-sm text-headline-sm text-primary uppercase">Саласпилс</span><span class="font-label-sm text-label-sm text-on-surface-variant">SALASPILS</span></div><p class="font-body-sm text-body-sm text-on-surface">Skolas iela 10<br>Salaspils</p><div class="flex flex-col gap-space-xs mt-space-xs font-label-md text-label-md text-secondary-fixed-dim"><a class="hover:text-primary transition-colors" href="tel:+37127192855">Liana: +371 27192855</a><a class="hover:text-primary transition-colors" href="tel:+37120529284">Anastasiia: +371 20529284</a><span class="text-on-surface-variant font-label-sm text-label-sm">Группы — по расписанию</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface uppercase">Связь &amp; Соцсети</span><div class="flex flex-col gap-space-xs font-label-md text-label-md text-on-surface-variant"><a class="hover:text-primary transition-colors flex items-center gap-space-xs" target="_blank" rel="noopener" href="https://instagram.com/twenty.threee.family"><span class="text-primary">-&gt;</span> @twenty.threee.family</a><a class="hover:text-primary transition-colors flex items-center gap-space-xs" data-path="trial-booking" href="booking.html"><span class="text-primary">-&gt;</span> Онлайн-запись на урок</a></div></div></div><div class="w-full bg-surface-container-lowest px-margin-mobile lg:px-margin py-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><div class="uppercase tracking-widest">© 2026 23 FAMILY DANCE STUDIO. RĪGA // SALASPILS.</div><div class="flex items-center gap-space-md"><span class="text-outline">DANCE WITH YOUR FAMILY</span></div></div></footer>
+
+<script src="assets/i18n-lv.js"></script><script src="assets/site.js"></script></body></html>
